@@ -1,6 +1,4 @@
-using System;
-
-namespace Yk.School.Models
+namespace Yk.School.ViewModels
 {
     public class ErrorViewModel
     {

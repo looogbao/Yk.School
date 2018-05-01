@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Yk.School.Models;
+using Yk.School.ViewModels;
 
 namespace Yk.School.Controllers
 {
