@@ -9,7 +9,7 @@ using Yk.School.ViewModels;
 
 namespace Yk.School.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public IActionResult Index()
         {

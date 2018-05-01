@@ -1,0 +1,108 @@
+﻿@model Yk.School.Models.Student
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RealName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RealName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Sex)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Sex)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CurrentSchool)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CurrentSchool)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Grade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Grade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Class)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Class)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ParentsName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ParentsName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ContantNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ContantNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalFeeAmount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalFeeAmount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastFeeDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastFeeDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ExpireDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ExpireDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateTime)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreateTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateUserId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreateUserId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DanceClass)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DanceClass.Title)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

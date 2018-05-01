@@ -1,0 +1,119 @@
+﻿@model IEnumerable<Yk.School.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.RealName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Age)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Sex)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CurrentSchool)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Grade)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Class)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ParentsName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ContantNumber)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TotalFeeAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.LastFeeDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ExpireDate)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreateTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CreateUserId)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DanceClass)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.RealName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sex)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentSchool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ParentsName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContantNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalFeeAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastFeeDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ExpireDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateUserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DanceClass.Title)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

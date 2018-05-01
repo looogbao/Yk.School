@@ -36,7 +36,8 @@ namespace Yk.School.Models
         /// <summary>
         /// 密码
         /// </summary>
-        [Range(6,20, ErrorMessage="密码长度为6-20位")]
+
+        [StringLength(20, ErrorMessage = "密码长度为6-20位", MinimumLength = 6)]
 
         public string Password { get; set; }
     }
